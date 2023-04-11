@@ -31,7 +31,12 @@ class ImageWidget extends HookWidget {
           });
           loading.value = false;
         },
-        child: Image.network(path, height: height, width: width),
+        child: Image.network(
+          path,
+          height: height,
+          width: width,
+          fit: BoxFit.cover,
+        ),
       );
     } else {
       return const Center(child: CircularProgressIndicator());

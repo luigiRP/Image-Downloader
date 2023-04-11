@@ -24,6 +24,7 @@ class HomePage extends ConsumerWidget {
                     child: SizedBox(
                       width: currentWidth,
                       child: Wrap(
+                        runSpacing: 30,
                         alignment: WrapAlignment.spaceEvenly,
                         children: [
                           for (var url in images)
